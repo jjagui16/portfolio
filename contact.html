@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Header with navigation -->
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <!--Hamburger Menu-->
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Navigation Links -->
+            <ul id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Contact Info(My LInks)-->
+    <main>
+        <section>
+            <h2> Connect with ME</h2>
+            <p>If you wouuld like to connect, feel free to reach out through one of my profiles:</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jose-aguilar-53943621b/">My LinkedIn</a></li>
+                    <li><a href="https://github.com/jjagui16/jjagui16">My Github</a></li>
+                </ul>
+        </section>
+
+        <section>
+            <!--Contact form example, will update with actual GET/POST methods-->
+            <p>Simple email form example:</p>
+            <form id="contactForm" action="https://example.com/submit" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section>
+            <!--Embedded Google Map of Spring, Tx-->
+            <h2>My Area</h2>
+            <p>This map show my general location in Texas.</p>
+            <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55244.94014809662!2d-95.4141096!3d30.0710158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640ccc646dfdb4b%3A0x496129fbe4b11b29!2sSpring%2C%20TX%2077373!5e0!3m2!1sen!2sus!4v1759766563257!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <figcaption>Interactive Google Map showing my general location in Texas.</figcaption>
+            </figure>
+        </section>
+    </main>
+    <!--Add a footer to the bottom of the page-->
+    <footer>
+        <p>&copy; 2025 Jose Aguilar. All rights reserved.</p>
+    </footer>
+    <!-- Link to external JS for menu and form validation; 'defer' ensures script runs after the HTML content loads so getElementbyID works -->
+     <script src="main.js" defer></script>
+
+    <script src="contact.js" defer></script>
+
+</body>
+</html>

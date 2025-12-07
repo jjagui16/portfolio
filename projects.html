@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <h1>Projects</h1>
+        <nav>
+            <!--Hamburger Menu-->
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Navigation Links -->
+            <ul id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Main content showing projects -->
+    <main>
+        <section>
+            <h2>My Work</h2>
+            <p>Here are some of the projects I have worked on during my studies and personal learning journey:</p>
+            <ul>
+                <li>Basic HTML About Me Page</li>
+                <li>JavaScript Interactive To-Do List</li>
+                <li>Third project</li>
+            </ul>
+        </section>
+
+        <!--Embedded Image example-->
+        <section>
+            <p>The following screenshots show of an early pythong project, the task was to demonstrate our code reading abilities as well as our understanding of macking changes to the code. In the comments you can see where the changes where made. </p>
+            <div class="slideshow-container">
+                <!-- Slides -->
+                <img class="slide" src="images/Screenshot.png" alt="Github code screenshot" width="600">
+                <img class="slide" src="images/Screenshot_2.png" alt="Second code screenshot" width="600">
+                <img class="slide" src="images/placeholder.png" alt="Placeholder project screenshot" width="600">
+
+                <!-- Navigation arrows -->
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <!--Add a footer to the bottom of the page-->
+    <footer>
+        <p>&copy; 2025 Jose Aguilar. All rights reserved.</p>
+    </footer>
+    <!-- Hamburger menu script: Toggles the menu open/closed and animates the icon into an X when clicked. -->
+    <script src="main.js" defer></script>
+    <script src="projects.js" defer></script>
+
+
+</body>
+</html>
