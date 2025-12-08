@@ -413,3 +413,27 @@ footer {
     color: var(--white);
 }
 
+/* ===== LIGHT MODE FORM INPUTS & BUTTONS ===== */
+.light-mode form,
+.light-mode input,
+.light-mode textarea {
+    background-color: #ffffff;      /* white background */
+    color: #0F172A;                 /* dark text for readability */
+    border: 1px solid #ccc;         /* keep border visible */
+}
+
+/* Placeholder text in light mode */
+.light-mode input::placeholder,
+.light-mode textarea::placeholder {
+    color: #555;                    /* medium gray placeholder text */
+}
+
+/* Keep buttons readable in light mode */
+.light-mode form button,
+.light-mode button {
+    background-color: var(--accent-color); /* accent button color */
+    color: #ffffff;                        /* white text for contrast */
+    border: none;
+}
+
+
