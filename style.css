@@ -399,4 +399,17 @@ footer {
     padding: 6px 14px;  /* keeps it small and neat */
 }
 
+/* Light mode adjustments for mobile dropdown menu */
+.light-mode nav ul {
+    background-color: var(--secondary-color); /* light dropdown background */
+}
+
+.light-mode nav ul li a {
+    color: var(--text-color); /* readable text on light background */
+}
+
+.light-mode nav ul li a:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
 
