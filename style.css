@@ -10,6 +10,8 @@ Defining colors as CSS variables here in :root allows us to:
     --accent-color:    #38BDF8;  /* crisp sapphire blue */
     --text-color:      #E2E8F0;  /* soft light gray/white */
     --white:           #F8FAFC;
+    --light-bg: #0F172A;   /* same as dark mode background */
+
 }
 
 /* ====== GLOBAL SETTINGS ====== */
@@ -375,3 +377,26 @@ footer {
     --white:           #0F172A;   /* dark text for icons, etc */
     --light-bg:        #ffffff;
 }
+
+.theme-toggle {
+    margin-left: 15px;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+.theme-toggle {
+    width: auto;        /* overrides 100% */
+    padding: 6px 14px;  /* keeps it small and neat */
+}
+
+
