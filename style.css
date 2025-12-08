@@ -365,3 +365,13 @@ footer {
         padding: 10px 5px;
     }
 }
+
+/* ====== LIGHT MODE THEME ==========*/
+.light-mode {
+    --primary-color:   #ffffff;   /* white header bg */
+    --secondary-color: #f1f5f9;   /* light content bg */
+    --accent-color:    #0F172A;   /* navy accent */
+    --text-color:      #0F172A;   /* dark text */
+    --white:           #0F172A;   /* dark text for icons, etc */
+    --light-bg:        #ffffff;
+}
