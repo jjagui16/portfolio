@@ -5,11 +5,11 @@ Defining colors as CSS variables here in :root allows us to:
     3. Make the design more maintainable and scalable, especially for themes, dark mode, or future redesigns.
 */
 :root {
-    --primary-color:   #1E1C19;  /* dark sandstone */
-    --secondary-color: #2C2925;
-    --accent-color:    #9ABFFD;  /* mist blue */
-    --text-color:      #EEE9E3;
-    --white:           #FFFFFF;
+    --primary-color:   #0F172A;  /* deep navy slate */
+    --secondary-color: #1E293B;  /* softer navy gray */
+    --accent-color:    #38BDF8;  /* crisp sapphire blue */
+    --text-color:      #E2E8F0;  /* soft light gray/white */
+    --white:           #F8FAFC;
 }
 
 /* ====== GLOBAL SETTINGS ====== */
