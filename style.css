@@ -215,16 +215,18 @@ input, textarea, button {
 
 button {
     background-color: var(--accent-color);
-    color: var(--white);
+    color: #ffffff;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Hover — no color swapping */
 button:hover {
-    background-color: var(--primary-color);
-    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(56, 189, 248, 0.35);
+    color: #ffffff; /* lock text color */
 }
 
 /* Link states */
@@ -436,4 +438,44 @@ footer {
     border: none;
 }
 
+/* ===== Resume Section ===== */
 
+.resume-section {
+    text-align: center;
+}
+
+.resume-buttons {
+    margin-top: 15px;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 18px;
+
+    background-color: var(--accent-color);
+    color: #ffffff;              /* LOCK text color */
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover — no color swapping at all */
+.resume-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(56, 189, 248, 0.35);
+}
+
+/* Force text always white even in light mode */
+.resume-btn:visited,
+.resume-btn:active,
+.resume-btn:hover {
+    color: #ffffff;
+}
+/* Light mode button fix */
+.light-mode .resume-btn {
+    background-color: var(--accent-color);
+    color: #ffffff; /* Force readable text in light mode */
+}

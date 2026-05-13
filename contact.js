@@ -14,10 +14,16 @@ form.addEventListener("submit", function(event) {
 /* ---------------------------
     NAME VALIDATION
     - Must be at least 2 characters
+    - Must be alpha characters only
     - Ensures the user provides a real name
     --------------------------- */
     if (name.length < 2) {
         messages.push("Name must be at least 2 characters.");
+        isValid = false;
+    }
+
+    if (!/^[A-Za-z]+$/.test(name)) {
+        messages.push("Name must contain only letters.");
         isValid = false;
     }
 
